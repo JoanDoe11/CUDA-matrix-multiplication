@@ -19,3 +19,5 @@ CUDA flow sequence:
 1. allocating memory on device; data transfered from host to device memory. 
 2. kernel is executed on the device; result is transferred back from device to host memory.
 3. free up the allocated memory on the device; 
+
+Threads in a grid execute the same kernel function. They have specific coordinates to distinguish themselves from eachother and identify the relevant portion of data to process. Execution resources are assigned to threads per block. Resources are organized into Streaming Multiprocessors. Multiple blocks of threads can be assigned to a single SM.
