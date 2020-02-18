@@ -21,3 +21,10 @@ CUDA flow sequence:
 3. free up the allocated memory on the device; 
 
 Threads in a grid execute the same kernel function. They have specific coordinates to distinguish themselves from eachother and identify the relevant portion of data to process. Execution resources are assigned to threads per block. Resources are organized into Streaming Multiprocessors. Multiple blocks of threads can be assigned to a single SM.
+
+# PyCUDA
+[src = nvidia]
+PyCUDA is a Python programming environment for CUDA. Code of the CUDA device is written in C.
+
+# Google Colaboratory
+[src=colab.research.google] Colaboratory is a free Jupyter notebook environment that requires no setup and runs entirely in the cloud. A notebook is a list of cells. Cells contain either explanatory text or executable code and its output.
